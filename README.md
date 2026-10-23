@@ -66,8 +66,6 @@ pio test -e native
 - [Architecture](docs/03-architecture.md)
 - [Sensor decisions](docs/04-sensor-decisions.md)
 - [Test plan and results](docs/05-test-report.md)
-- [Demo and handover](docs/06-demo-handover.md)
-- [Individual reflection report](docs/07-individual-reflection.md)
 
 ## Status
 
