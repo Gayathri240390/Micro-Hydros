@@ -40,7 +40,7 @@ behind a HAL that the teacher required, with real drivers prepared.
 - Device time is uptime, not wall-clock time; the gateway adds UTC time on arrival.
 - DS18B20 sensors are addressed by bus index, which is not stable when probes are added or swapped.
 - Alarm thresholds are assumptions, not agronomic values from the customer.
-- Wokwi end-to-end and long-run tests are still open (see test report).
+- Wokwi end-to-end and long-run tests passed in the local 19 Nov simulation. Reconnection and buffering were tested in controlled scenarios; network blackhole, Wi-Fi loss and broker shutdown were not verified. See [05-test-report.md](05-test-report.md).
 
 ## Recommendations for the next phase
 

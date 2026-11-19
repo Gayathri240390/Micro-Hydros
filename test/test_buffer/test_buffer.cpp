@@ -1,5 +1,8 @@
 #include <unity.h>
 
+void setUp() {}
+void tearDown() {}
+
 #include "payload_buffer.h"
 
 void test_fifo_order() {

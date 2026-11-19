@@ -48,8 +48,8 @@ SHT40 / DS18B20 ───┘        (ESP32 firmware, C++)                       
 ### 1. Run the tests (no hardware)
 
 ```bash
-pio test -e native            # 25 firmware unit tests
-python -m pytest gateway      # 17 gateway tests
+pio test -e native            # 30 firmware unit tests
+python -m pytest gateway      # 19 gateway tests
 ```
 
 ### 2. Run the ESP32 in Wokwi and receive data on your PC
@@ -129,3 +129,5 @@ was verified end to end on a PC (host build → MQTT broker → receiver → SQL
 a run in Wokwi against the public broker and the team's own test runs; see the test report. The repository
 was started by Gayathri (first commit 4 Sep, main upload 23 Oct 2026); the HAL, MQTT and gateway work
 was added in November 2026 during the re-take. Dates are recorded as they happened.
+
+Local testing update (19 Nov 2026): Khaled ran Wokwi T-13–T-17 and T-18 on Windows. After a test setup fix, 30/30 firmware and 19/19 gateway tests passed. T-16 covers controlled disconnection and reconnection scenarios with limits described in the [test report](docs/05-test-report.md). These results do not establish the status of another team member's separate test run.

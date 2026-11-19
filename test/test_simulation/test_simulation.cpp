@@ -1,5 +1,8 @@
 #include <unity.h>
 
+void setUp() {}
+void tearDown() {}
+
 #include <cmath>
 
 #include "hal/simulated_sensors.h"

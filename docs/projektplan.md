@@ -63,6 +63,8 @@ Fullständig lista med verifiering och status: `docs/02-requirements-backlog.md`
 
 MVP är prio 1–5 och gjordes först. Analysen (9) lades till efter att kärnflödet fungerade.
 
+**Lokal uppdatering 19/11:** Khaled har genomfört T-13–T-17 i Wokwi och T-18 på Windows samt uppdaterat testprotokollet. Larmgränstesterna klarade 5/5. T-16 är godkänt för de kontrollerade scenarier som beskrivs i `docs/05-test-report.md`, med angivna begränsningar. Gayathris separata T-18-körning har inte verifierats. Tabellen ovan visar fortsatt statusen den 14/11.
+
 ## 7. Tidsplan
 | Period | Innehåll | Avslut |
 |---|---|---|
@@ -95,7 +97,7 @@ Arbetsflöde: feature-branch, pull request till Gayathris repo, granskning av en
 Vad som testas, hur det görs, förväntat och faktiskt resultat finns i `docs/05-test-report.md`. Kort:
 - 25 enhetstester för firmware och 19 för gateway. Alla gick igenom den 14/11.
 - Ett helt flöde har körts på PC: värdkörning av firmwarekärnan, MQTT, mottagare, SQLite och analys. Det täcker fel, tappade meddelanden och tidig varning.
-- Öppet: körning i Wokwi, avbrott i brokern, långkörning och test på en andra dator.
+- Lokal uppdatering 19/11: Wokwi-tester, kontrollerade anslutningsavbrott och långkörning samt Khaleds Windows-körning har genomförts. T-16:s avgränsningar och resultaten finns i `docs/05-test-report.md`; Gayathris separata T-18-körning har inte verifierats.
 
 ## 11. Förlorad data (Khaled punkt 2)
 Enheten buffrar upp till 20 mätningar i RAM när anslutningen är nere och skickar dem i ordning när den kommer tillbaka. Vid längre avbrott tappas de äldsta, och det räknas. Mottagaren upptäcker luckor via sekvensnummer och omstarter via att numret börjar om. Inget sparas över en omstart, vilket är en dokumenterad begränsning. Tidsstämpeln är drifttid; mottagaren lägger till UTC-tid när datan kommer in.

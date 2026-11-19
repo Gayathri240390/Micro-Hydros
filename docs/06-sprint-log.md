@@ -26,6 +26,8 @@ Done: plan v1 and v2, HAL and simulation, MQTT with buffering, gateway with hist
 
 Goal: Wokwi tests T-13 – T-18, update the test report with real results, demo script and recording.
 
+Local testing update, 19 Nov: Khaled ran T-13–T-17 in Wokwi and T-18 on Windows, added alarm boundary tests and recorded the results in `docs/05-test-report.md`. The Windows rerun passed 30/30 firmware and 19/19 gateway tests after fixing the Unity test setup. T-16 passed the controlled scenarios described in the report; their limitations remain. Gayathri's separate T-18 run and the video recording are not verified by these results.
+
 ## Buffer (23 – 27 Nov)
 
 Fixes after feedback, individual reflection reports, final hand-in.
